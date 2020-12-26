@@ -9,7 +9,7 @@ public class AoC9 {
     public static void main(String[] args) {
         List<String> al = new ArrayList<>();
         try {
-            al = fileReader(System.getProperty("user.dir") + "/src/AoC2020/input/input9.txt");
+            al = CommonUsage.fileReader(System.getProperty("user.dir") + "/src/AoC2020/input/input9.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -45,15 +45,5 @@ public class AoC9 {
                 }
             }
         }
-    }
-
-    public static ArrayList<String> fileReader(String path) throws FileNotFoundException {
-        File f = new File(path);
-        Scanner s = new Scanner(f);
-        ArrayList<String> al = new ArrayList<>();
-        while (s.hasNextLine()) {
-            al.add(s.nextLine());
-        }
-        return al;
     }
 }

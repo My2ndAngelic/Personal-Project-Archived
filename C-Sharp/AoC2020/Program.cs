@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Management.Instrumentation;
+using System.Reflection;
 
 namespace AoC2020
 {
@@ -9,7 +11,8 @@ namespace AoC2020
 		public static void Main(string[] args)
 		{
 			// D1();
-			D2();
+			// D2();
+			D3();
 		}
 
 		static void D1()
@@ -103,6 +106,39 @@ namespace AoC2020
 			Console.ReadLine();
 		}
 
+		static void D3()
+		{
+			var a = FileReader(3);
+			
+			int TreeCounter(string[] array, int right, int down)
+			{
+				var tree = 0;
+				for (var i = 0; i < a.Length; i+=down)
+				{
+					if (a[i][right*i%a[i].Length].Equals('#'))
+					{
+						tree++;
+					}
+				}
+				return tree;
+			}
+			
+			Console.WriteLine(TreeCounter(a,3,1));
+
+
+			var tempout2 = new[] {TreeCounter(a, 1, 1),
+				TreeCounter(a, 3, 1),
+				TreeCounter(a, 5, 1),
+				TreeCounter(a, 7, 1),
+				TreeCounter(a, 1, 2)
+			};
+			
+			Console.WriteLine("[" + string.Join(", ", tempout2) + "]");
+
+			var b = tempout2.Aggregate<int, long>(1, (current, i) => current * i);
+			Console.WriteLine(b);
+		}
+
 		private static string[] FileReader(int dayNo)
 		{
 			try
@@ -112,7 +148,7 @@ namespace AoC2020
 			}
 			catch (FileNotFoundException)
 			{
-				throw new FileNotFoundException("Re-enter the file in the code.");
+				throw new FileNotFoundException("Fix "+MethodBase.GetCurrentMethod().Name + " method please.");
 			}
 		}
 	}
