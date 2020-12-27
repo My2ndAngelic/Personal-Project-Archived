@@ -1,11 +1,11 @@
 public class MatrixMultiplication {
     public static double[][] matrixMultiplication(double[][] a, double[][] b) {
         double[][] c = new double[a.length][b[0].length];
-        if (!filledMatrix(a) || !filledMatrix(b)) {
-            throw new ArithmeticException("Check your matrices filled or not.");
+        if (!matrixCheck(a) || !matrixCheck(b)) {
+            throw new ArithmeticException("Your input is not a matrix.");
         }
         if (!dimensionAgreement(a, b)) {
-            throw new ArithmeticException("Check your dimension agreement of the input matrices");
+            throw new ArithmeticException("Your matrices do not agree in dimension.");
         }
         for (int i = 0; i < c.length; i++) {
             for (int j = 0; j < c[0].length; j++) {
@@ -21,7 +21,7 @@ public class MatrixMultiplication {
         return c;
     }
 
-    private static boolean filledMatrix(double[][] a) {
+    private static boolean matrixCheck(double[][] a) {
         int temp = a[0].length;
         for (int i = 1; i < a.length; i++) {
             if (a[i].length != temp) {
