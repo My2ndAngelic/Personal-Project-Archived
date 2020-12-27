@@ -12,7 +12,7 @@ namespace AoC2020
 		{
 			// D1();
 			// D2();
-			D3();
+			// D3();
 		}
 
 		static void D1()
@@ -133,10 +133,15 @@ namespace AoC2020
 				TreeCounter(a, 1, 2)
 			};
 			
-			Console.WriteLine("[" + string.Join(", ", tempout2) + "]");
+			// Console.WriteLine("[" + string.Join(", ", tempout2) + "]");
 
 			var b = tempout2.Aggregate<int, long>(1, (current, i) => current * i);
 			Console.WriteLine(b);
+		}
+
+		static void D4()
+		{
+			
 		}
 
 		private static string[] FileReader(int dayNo)
@@ -151,5 +156,5 @@ namespace AoC2020
 				throw new FileNotFoundException("Fix "+MethodBase.GetCurrentMethod().Name + " method please.");
 			}
 		}
-	}
+	}	
 }
