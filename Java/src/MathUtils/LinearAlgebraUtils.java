@@ -1,9 +1,9 @@
-import java.util.Arrays;
+package MathUtils;
 
 public class LinearAlgebraUtils {
     public static double[][] matrixMultiplication(double[][] a, double[][] b) {
         double[][] c = new double[a.length][b[0].length];
-        if (!matrixCheck(a) || !matrixCheck(b)) {
+        if (isNotMatrix(a) || isNotMatrix(b)) {
             throw new ArithmeticException("Your input is not a matrix.");
         }
         if (!dimensionAgreement(a, b)) {
@@ -23,14 +23,14 @@ public class LinearAlgebraUtils {
         return c;
     }
 
-    public static boolean matrixCheck(double[][] a) {
+    public static boolean isNotMatrix(double[][] a) {
         int temp = a[0].length;
         for (int i = 1; i < a.length; i++) {
             if (a[i].length != temp) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     public static double[] rowExtractor(double[][] input, int no) {
@@ -71,7 +71,7 @@ public class LinearAlgebraUtils {
     }
 
     public static boolean isSquareMatrix(double[][] a) {
-        if (!matrixCheck(a)) {
+        if (isNotMatrix(a)) {
             throw new ArithmeticException("Check your matrix.");
         }
         return rowLength(a) == columnLength(a);
@@ -94,7 +94,7 @@ public class LinearAlgebraUtils {
             res = a[0][0] * a[1][1] - a[1][0] * a[0][1];
         } else {
             res = 0;
-            for (int j1=0; j1< n; j1++){
+            for (int j1 = 0; j1 < n; j1++){
                 double[][] m = generateSubArray (a, n, j1);
                 res += Math.pow(-1.0, 1.0+j1+1.0) * a[0][j1] * determinant1(m, n-1);
             }
@@ -102,7 +102,7 @@ public class LinearAlgebraUtils {
         return res;
     }
 
-    public static double[][] generateSubArray (double A[][], int N, int j1){
+    private static double[][] generateSubArray (double A[][], int N, int j1){
         double[][] m = new double[N-1][];
         for (int k=0; k<(N-1); k++)
             m[k] = new double[N-1];
@@ -118,9 +118,83 @@ public class LinearAlgebraUtils {
         }
         return m;
     }
+    // End SOF part
 
     public static double determinant(double[][] a) {
-        return determinant1(a, a.length);
+        if (!isSquareMatrix(a)) {
+            throw new ArithmeticException("Not a square matrix.");
+        } else {
+            return determinant1(a, a.length);
+        }
     }
-    // End SOF part
+
+    public static double[][] add(double[][] a, double[][] b) {
+        if (rowLength(a) != rowLength(b)) {
+            throw new ArithmeticException("Unequal row.");
+        } else if (columnLength(a) != columnLength(b)) {
+            throw new ArithmeticException("Unequal column");
+        } else if (isNotMatrix(a) || isNotMatrix(b)) {
+            throw new ArithmeticException("Check your input");
+        } else {
+            double[][] c = new double[a.length][a[0].length];
+            for (int i = 0; i < c.length; i++) {
+                for (int j = 0; j < c[0].length; j++) {
+                    c[i][j] = a[i][j] + b[i][j];
+                }
+            }
+            return c;
+        }
+    }
+
+    public static double[][] subtract(double[][] a, double[][] b) {
+        if (rowLength(a) != rowLength(b)) {
+            throw new ArithmeticException("Unequal row.");
+        } else if (columnLength(a) != columnLength(b)) {
+            throw new ArithmeticException("Unequal column");
+        } else if (isNotMatrix(a) || isNotMatrix(b)) {
+            throw new ArithmeticException("Check your input");
+        } else {
+            double[][] c = new double[a.length][a[0].length];
+            for (int i = 0; i < c.length; i++) {
+                for (int j = 0; j < c[0].length; j++) {
+                    c[i][j] = a[i][j] - b[i][j];
+                }
+            }
+            return c;
+        }
+    }
+
+    public static double[][] multiplyConstant(double[][] a, double b) {
+        if (isNotMatrix(a)) {
+            throw new ArithmeticException("Check your input");
+        } else {
+            double[][] c = new double[a.length][a[0].length];
+            for (int i = 0; i < c.length; i++) {
+                for (int j = 0; j < c[0].length; j++) {
+                    c[i][j] = a[i][j] * b;
+                }
+            }
+            return c;
+        }
+    }
+
+    public static double[][] divideConstant(double[][] a, double b) {
+        if (isNotMatrix(a)) {
+            throw new ArithmeticException("Check your input");
+        } else if (b == 0) {
+            throw new ArithmeticException("Divide by 0");
+        } else {
+            double[][] c = new double[a.length][a[0].length];
+            for (int i = 0; i < c.length; i++) {
+                for (int j = 0; j < c[0].length; j++) {
+                    c[i][j] = a[i][j] / b;
+                }
+            }
+            return c;
+        }
+    }
+
+    public static int rank(double[][] a) {
+        return 0;
+    }
 }
