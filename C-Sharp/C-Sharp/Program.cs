@@ -1,27 +1,35 @@
 ﻿using System;
+using System.Text;
 
 namespace CSharp
 {
     public static class MainClass
     {
         public static void Main(string[] args)
-        {
-   //          Console.WriteLine("Hello World Main");
-			// Console.WriteLine(Basic.GCD(56, 7));
-			// Console.WriteLine(Basic.SF1947.LeMain(679));
-   //          Console.WriteLine(Basic.Palindrome("dogma i am god"));
-   //          School a = new Student("John",15,"SF","High");
-   //          Console.WriteLine(a.ToString());
-   //          Test();
-
-            double[,] aa1 = {{1, 2}, {3, 4}};
-            double[][] aa2 =
+        {            
+            double[,] c = { { 1, 2 }, { 3, 4 } };
+            var stringBuilder = new StringBuilder();
+            for (int i = 0; i < c.GetLength(0); i++)
             {
-	            new double[] {1, 2},
-	            new double[] {3, 4}
-            };
-            Console.WriteLine(aa1.Length);
-            Console.WriteLine(aa2[0].Length);
+	            stringBuilder.Append("[[");
+				for (int j = 0; j < c.GetLength(1); j++)
+	            {
+		            stringBuilder.Append(c[i, j]);
+		            if (j < c.GetLength(1) - 1)
+		            {
+			            stringBuilder.Append(", ");
+		            }
+	            }
+	            stringBuilder.Append("]");
+	            if (i < c.GetLength(0) - 1)
+	            {
+		            stringBuilder.Append(", ");
+	            }
+            }
+            stringBuilder.Append("]");
+
+            Console.WriteLine(stringBuilder.ToString());
+            Console.ReadLine();
         }
 
         public static void Test()

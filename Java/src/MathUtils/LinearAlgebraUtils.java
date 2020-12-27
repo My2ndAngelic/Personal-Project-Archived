@@ -60,14 +60,14 @@ public class LinearAlgebraUtils {
     }
 
     public static double vectorDotProduct(double[] a, double[] b) {
-        double out = 0;
+        double output = 0;
         if (a.length != b.length) {
             throw new ArithmeticException("Input vectors are not in the same space.");
         }
         for (int i = 0; i < a.length; i++) {
-            out += a[i] * b[i];
+            output += a[i] * b[i];
         }
-        return out;
+        return output;
     }
 
     public static boolean isSquareMatrix(double[][] a) {
@@ -195,6 +195,6 @@ public class LinearAlgebraUtils {
     }
 
     public static int rank(double[][] a) {
-        return 0;
+        throw new RuntimeException("Not yet implemented");
     }
 }

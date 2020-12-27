@@ -30,10 +30,10 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MathUtils\Basic.cs" />
     <Compile Include="MathUtils\LinearAlgebraUtils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Basic.cs" />
     <Compile Include="School.cs" />
     <Compile Include="EmptyClass.cs" />
   </ItemGroup>

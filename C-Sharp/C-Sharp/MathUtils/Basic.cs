@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace CSharp
+namespace CSharp.MathUtils
 {
     public class Basic
     {
-        public static int GCD(int a, int b)
+        public static long GCD(long a, long b)
         {
             if (a < 0 || b < 0)
             {
@@ -21,54 +21,58 @@ namespace CSharp
 
         public static bool Palindrome(string str)
         {
-            var tmp = str.ToLower();
-            var c = tmp.ToCharArray();
+            string tmp = str.ToLower();
+            char[] c = tmp.ToCharArray();
             tmp = "";
             // String cleaner
-            for (var i = 0; i < c.Length; i++)
+            for (int i = 0; i < c.Length; i++)
                 if (char.IsLetterOrDigit(c[i]))
                     tmp += c[i];
-            var tmp2 = "";
-            for (var i = 0; i < tmp.Length; i++) tmp2 += tmp.Substring(tmp.Length - i - 1, 1);
-            return string.Equals(tmp, tmp2);
+            string tmp2 = "";
+            for (int i = 0; i < tmp.Length; i++) {
+                tmp2 += tmp.Substring(tmp.Length - i - 1, 1);
+            }
+			return string.Equals(tmp, tmp2);
         }
 
         public static class SF1947
         {
-            public static int LeMain(int input)
+            public static long LeMain(long input)
             {
                 input = Div8(input);
                 input = Div9(input);
                 return input;
             }
 
-            private static int Div8(int a)
+            private static long Div8(long a)
             {
                 a *= 10;
-                for (var i = 0; i < 10; i++)
+				for (int i = 0; i < 10; i++)
                 {
                     a++;
-                    if (a % 8 == 0) break;
+                    if (a % 8 == 0) {
+						break;
+                    }
                 }
 
                 return a;
             }
 
-            private static int Div9(int a)
+            private static long Div9(long a)
             {
-                var tmp = DigitCount(a);
-                for (var i = 0; i < 10; i++)
+                long tmp = DigitCount(a);
+                for (int i = 0; i < 10; i++)
                 {
-                    a += (int) Math.Pow(10, tmp) * i;
+                    a += (long) Math.Pow(10, tmp) * i;
                     if (a % 9 == 0) break;
                 }
 
                 return a;
             }
 
-            private static int DigitCount(int a)
+            private static long DigitCount(long a)
             {
-                var dc = 0;
+                long dc = 0;
                 while (a != 0)
                 {
                     a /= 10;
