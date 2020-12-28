@@ -35,8 +35,8 @@ public class BasicMathUtils {
         }
     }
 
-    public static long getDecimalPart(double a) {
-        return (long) (a % 1);
+    public static double getDecimalPart(double a) {
+        return a - getIntegerPart(a);
     }
 
     public static long getIntegerPart(double a) {

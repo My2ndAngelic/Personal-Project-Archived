@@ -20,5 +20,7 @@ public class Hello {
 //        System.out.println(Arrays.deepToString(LinearAlgebraUtils.add(e, e)));
 //
 //        System.out.println(BasicMathUtils.EuclidGCD(3,4));
+        double c = 3.5;
+        System.out.println(BasicMathUtils.getDecimalPart(c));
     }
 }
