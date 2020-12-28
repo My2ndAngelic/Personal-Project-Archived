@@ -13,12 +13,12 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C43A35A4-A623-444A-BD19-678269308E07}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{C43A35A4-A623-444A-BD19-678269308E07}.Debug|anycpu.Build.0 = Debug|anycpu
+		{C43A35A4-A623-444A-BD19-678269308E07}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{C43A35A4-A623-444A-BD19-678269308E07}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{C43A35A4-A623-444A-BD19-678269308E07}.Release|anycpu.ActiveCfg = Release|anycpu
 		{C43A35A4-A623-444A-BD19-678269308E07}.Release|anycpu.Build.0 = Release|anycpu
-		{97AA741F-37E4-4DD1-AECB-E11B3158879D}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{97AA741F-37E4-4DD1-AECB-E11B3158879D}.Debug|anycpu.Build.0 = Debug|anycpu
+		{97AA741F-37E4-4DD1-AECB-E11B3158879D}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{97AA741F-37E4-4DD1-AECB-E11B3158879D}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{97AA741F-37E4-4DD1-AECB-E11B3158879D}.Release|anycpu.ActiveCfg = Release|anycpu
 		{97AA741F-37E4-4DD1-AECB-E11B3158879D}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection

@@ -6,8 +6,8 @@ namespace CSharp
     public static class MainClass
     {
         public static void Main(string[] args)
-        {            
-            double[,] c = { { 1, 2 }, { 3, 4 } };
+        {
+            /*double[,] c = { { 1, 2 }, { 3, 4 } };
             var stringBuilder = new StringBuilder();
             for (int i = 0; i < c.GetLength(0); i++)
             {
@@ -29,6 +29,11 @@ namespace CSharp
             stringBuilder.Append("]");
 
             Console.WriteLine(stringBuilder.ToString());
+            Console.ReadLine();*/
+
+            double c = 3.9;
+            long d = (long) ((c % 1) - c);
+            Console.WriteLine(d);
             Console.ReadLine();
         }
 
