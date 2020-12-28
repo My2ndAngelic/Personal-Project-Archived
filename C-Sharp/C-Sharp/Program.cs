@@ -36,10 +36,5 @@ namespace CSharp
             Console.WriteLine(d);
             Console.ReadLine();
         }
-
-        public static void Test()
-		{
-            Console.WriteLine("Hello");
-		}
     }
 }
