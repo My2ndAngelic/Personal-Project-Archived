@@ -35,7 +35,7 @@ namespace CSharp.MathUtils
 			return string.Equals(tmp, tmp2);
         }
 
-        public static class SF1947
+        public static class Divisibility
         {
             public static long LeMain(long input)
             {

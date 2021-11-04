@@ -13,5 +13,11 @@ namespace CSharp.MathUtils
             }
             return c;
         }
+        
+        public static double[] ColumnExtractor(double[,] a, int rowNo) // Not yet implemented
+		{
+            var c = new double[a.GetLength(0)];
+            return c;
+		}
     }
 }
