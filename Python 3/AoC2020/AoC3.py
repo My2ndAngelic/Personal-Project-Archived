@@ -15,5 +15,5 @@ def main():
                 count += 1
             j += 3
         print(count)
-        
+
 main()
