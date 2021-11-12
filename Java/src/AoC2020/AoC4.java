@@ -3,7 +3,6 @@ package AoC2020;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class AoC4 {
@@ -82,7 +81,7 @@ public class AoC4 {
         return "-1";
     }
 
-    public static boolean isvalidBirthyear(String s) {
+    public static boolean isValidBirthYear(String s) {
         try {
             int a = Integer.parseInt(getField(s, "byr"));
             return 1920 <= a && a <= 2002;
@@ -91,7 +90,7 @@ public class AoC4 {
         }
     }
 
-    public static boolean isvalidIssueyear(String s) {
+    public static boolean isValidIssueYear(String s) {
         try {
             int a = Integer.parseInt(getField(s, "iyr"));
             return a >= 2010 && a <= 2020;
@@ -100,7 +99,7 @@ public class AoC4 {
         }
     }
 
-    public static boolean isvalidExpirationyear(String s) {
+    public static boolean isValidExpirationYear(String s) {
         try {
             int a = Integer.parseInt(getField(s, "eyr"));
             return a >= 2020 && a <= 2030;
@@ -109,7 +108,7 @@ public class AoC4 {
         }
     }
 
-    public static boolean isvalidHeight(String s) {
+    public static boolean isValidHeight(String s) {
         String st = getField(s, "hgt");
         st = st.toLowerCase();
         if (st.length() == 4) {
@@ -130,7 +129,7 @@ public class AoC4 {
         return false;
     }
 
-    public static boolean isValidHaircolor(String s) {
+    public static boolean isValidHairColor(String s) {
         String st = getField(s, "hcl");
         int counter = 6;
         if (st.length() == 7) {
@@ -145,7 +144,7 @@ public class AoC4 {
         } return counter==0;
     }
 
-    public static boolean isValidEyecolor(String s) {
+    public static boolean isValidEyeColor(String s) {
         String st = getField(s, "ecl");
         return st.equals("amb") ||
                 st.equals("blu") ||
@@ -156,7 +155,7 @@ public class AoC4 {
                 st.equals("oth");
     }
 
-    public static boolean isValidPassportnumber(String s) {
+    public static boolean isValidPassportNumber(String s) {
         String st = getField(s, "pid");
         if (st.length() == 9) {
             for (char c : st.toCharArray()) {
@@ -169,12 +168,12 @@ public class AoC4 {
     }
 
     public static boolean isValidPassport2(String s) {
-        return isvalidBirthyear(s) &&
-                isvalidIssueyear(s) &&
-                isvalidExpirationyear(s) &&
-                isvalidHeight(s) &&
-                isValidHaircolor(s) &&
-                isValidEyecolor(s) &&
-                isValidPassportnumber(s);
+        return isValidBirthYear(s) &&
+                isValidIssueYear(s) &&
+                isValidExpirationYear(s) &&
+                isValidHeight(s) &&
+                isValidHairColor(s) &&
+                isValidEyeColor(s) &&
+                isValidPassportNumber(s);
     }
 }
