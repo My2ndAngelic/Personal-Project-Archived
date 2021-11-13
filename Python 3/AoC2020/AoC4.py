@@ -1,5 +1,4 @@
 import os
-import re
 
 
 def isFieldExist(s, fieldname):
@@ -71,6 +70,7 @@ def isValidHairColor(s):
             return True
     return False
 
+
 def isValidEyeColor(s):
     return getField(s, 'ecl') in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']
 
@@ -102,8 +102,9 @@ def main():
 
     for a in passid:
         if isValidPassportPart2(a):
-            count+=1
+            count += 1
     print(count)
 
 
-main()
+if __name__ == '__main__':
+    main()
