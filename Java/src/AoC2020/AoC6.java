@@ -31,13 +31,14 @@ public class AoC6 {
                     }
                 }
                 counter += sb.length();
+                System.out.println(counter);
                 al2 = new ArrayList<>();
             } else {
                 al2.add(s);
             }
         }
         System.out.println(counter);
-
+        System.out.println(al);
         // Part 2
         al2 = new ArrayList<>();
         counter = 0;
