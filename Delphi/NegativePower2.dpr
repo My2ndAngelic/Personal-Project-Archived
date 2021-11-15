@@ -1,5 +1,5 @@
 program power;
-const n=6;
+const n=100;
 type digit = 0..9;
 var i,k,r: integer;
     d: array [1..n] of digit;
@@ -16,8 +16,7 @@ begin
           write(chr(d[i]+ord('0')))
       end;
     d[k] := 5;
-    write('5 ');
-    writeln('');
+    writeln(d[k]);
   end;
   readln;
 end.
