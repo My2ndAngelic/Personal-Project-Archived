@@ -1,13 +1,15 @@
 program AoC1;
 
-{$APPTYPE CONSOLE}
+var x: integer;
+i: integer;
 
-{$R *.res}
+example: array [1..6] of integer = (1721,979,366,299,675,1456);
 
-uses
-  System.SysUtils;
 
 begin
   writeln('Hello World');
+  for I := 1 to 6 do
+     write(example[i],' ');
+  writeln;
   readln;
 end.
