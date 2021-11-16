@@ -6,7 +6,6 @@ const
   C_FNAME = 'input1.txt';
 
 var
-  n: integer;
   x: integer;
   i: integer;
   j: integer;
@@ -15,7 +14,6 @@ var
   example: array of integer;
 
   tfIn: TextFile;
-  s: string;
 
 begin
   writeln('Hello World');
