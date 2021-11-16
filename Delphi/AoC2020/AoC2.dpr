@@ -1,4 +1,4 @@
-program AoC2;
+﻿program AoC2;
 
 {$APPTYPE CONSOLE}
 

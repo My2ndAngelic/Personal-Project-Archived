@@ -9,6 +9,9 @@
         <Projects Include="AoC2.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="..\..\..\..\Embarcadero\Studio\Projects\AoCUtilities.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="AoC2:Make">
         <MSBuild Projects="AoC2.dproj" Targets="Make"/>
     </Target>
+    <Target Name="AoCUtilities">
+        <MSBuild Projects="..\..\..\..\Embarcadero\Studio\Projects\AoCUtilities.dproj"/>
+    </Target>
+    <Target Name="AoCUtilities:Clean">
+        <MSBuild Projects="..\..\..\..\Embarcadero\Studio\Projects\AoCUtilities.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AoCUtilities:Make">
+        <MSBuild Projects="..\..\..\..\Embarcadero\Studio\Projects\AoCUtilities.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="AoC1;AoC2"/>
+        <CallTarget Targets="AoC1;AoC2;AoCUtilities"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="AoC1:Clean;AoC2:Clean"/>
+        <CallTarget Targets="AoC1:Clean;AoC2:Clean;AoCUtilities:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="AoC1:Make;AoC2:Make"/>
+        <CallTarget Targets="AoC1:Make;AoC2:Make;AoCUtilities:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

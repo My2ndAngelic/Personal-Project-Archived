@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2021/11/15 23:26:58.000.963,C:\Users\My2ndAngelic\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\My2ndAngelic\Documents\Embarcadero\Studio\Projects\AoC2.dproj</Transaction>
-    <Transaction>2021/11/15 23:27:07.000.887,C:\Users\My2ndAngelic\Documents\Embarcadero\Studio\Projects\AoC2.dproj=C:\Users\My2ndAngelic\Documents\GitHub\Personal-Project\Delphi\AoC\AoC2.dproj</Transaction>
+    <Transaction>2021/11/15 23:26:58.000.963,C:\Users\My2ndAngelic\Documents\Embarcadero\Studio\Projects\AoC2.dproj=C:\Users\My2ndAngelic\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/11/15 23:27:07.000.887,C:\Users\My2ndAngelic\Documents\GitHub\Personal-Project\Delphi\AoC\AoC2.dproj=C:\Users\My2ndAngelic\Documents\Embarcadero\Studio\Projects\AoC2.dproj</Transaction>
   </Transactions>
 </BorlandProject>
