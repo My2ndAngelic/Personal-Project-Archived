@@ -6,12 +6,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AoCUtilities {
-    /**
-     * Read file and return in ArrayList<String>
-     * @param path to the file
-     * @return 
-     * @throws FileNotFoundException if file is not found
-     */
     public static ArrayList<String> fileImportToStringArrayList(String path) throws FileNotFoundException {
         File myFile = new File(path);
         Scanner sc = new Scanner(myFile);
@@ -27,7 +21,7 @@ public class AoCUtilities {
         Scanner sc = new Scanner(myFile);
         String[] myData = new String[Math.toIntExact(myFile.length())];
         int i = 0;
-        while  (sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
             myData[i] = sc.nextLine();
             i++;
         }
@@ -38,8 +32,20 @@ public class AoCUtilities {
         File myFile = new File(path);
         Scanner sc = new Scanner(myFile);
         ArrayList<Integer> myData = new ArrayList<>();
-        while  (sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
             myData.add(Integer.parseInt(sc.nextLine()));
+        }
+        return myData;
+    }
+
+    public static int[] fileImportToIntArray(String path) throws FileNotFoundException, NumberFormatException {
+        File myFile = new File(path);
+        Scanner sc = new Scanner(myFile);
+        int[] myData = new int[Math.toIntExact(myFile.length())];
+        int i = 0;
+        while (sc.hasNextLine()) {
+            myData[i] = Integer.parseInt(sc.nextLine());
+            i++;
         }
         return myData;
     }
