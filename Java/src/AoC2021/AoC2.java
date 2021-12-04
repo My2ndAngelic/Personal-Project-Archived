@@ -1,36 +1,43 @@
 package AoC2021;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class AoC2 {
-    public enum Movement {forward, down, up};
+    enum Movement {forward, down, up};
 
     public static int problemOne(ArrayList<String> dataIn) {
-        System.out.println(dataIn);
+        int horizontal = 0;
+        int vertical = 0;
         for (String s : dataIn) {
             String[] ss = s.split(" ");
-            System.out.print(Arrays.toString(ss) + " ");
             Movement inS = Movement.valueOf(ss[0]);
             switch (inS) {
-                case forward:
-                    System.out.println("f");
-                    break;
-                case down:
-                    System.out.println("d");
-                    break;
-                case up:
-                    System.out.println("u");
-                    break;
-                default:
-                    System.out.println("fu");
-                    break;
+                case forward -> horizontal += Integer.parseInt(ss[1]);
+                case down -> vertical += Integer.parseInt(ss[1]);
+                case up -> vertical -= Integer.parseInt(ss[1]);
+                default -> System.out.println("fu");
             }
         }
-        return -1;
+        return horizontal * vertical;
     }
 
     public static int problemTwo(ArrayList<String> dataIn) {
-        return -1;
+        int horizontal = 0;
+        int vertical = 0;
+        int aim = 0;
+        for (String s : dataIn) {
+            String[] ss = s.split(" ");
+            Movement inS = Movement.valueOf(ss[0]);
+            switch (inS) {
+                case forward -> {
+                    horizontal += Integer.parseInt(ss[1]);
+                    vertical += aim * Integer.parseInt(ss[1]);
+                }
+                case down -> aim += Integer.parseInt(ss[1]);
+                case up -> aim -= Integer.parseInt(ss[1]);
+                default -> System.out.println("fu");
+            }
+        }
+        return horizontal * vertical;
     }
 }
