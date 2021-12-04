@@ -1,31 +1,40 @@
-import MathUtils.BasicMathUtils;
-import MathUtils.LinearAlgebraUtils;
-
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Hello {
-    public static void main(String[] args) {
-//        double[][] a = {{1, 2, 3}}; // 2 x 3 matrix
-//        double[][] b = {{4},{5},{6}}; // 3 x 4 matrix
-//        System.out.println(Arrays.deepToString(LinearAlgebraUtils.matrixMultiplication(a, b)));
-//
-//        double[] c = {1, 2, 3};
-//        double[] d = {4, 5, 6};
-//        System.out.println(LinearAlgebraUtils.vectorDotProduct(c, d));
-//
-//        double[][] e = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
-//        System.out.println(LinearAlgebraUtils.isSquareMatrix(e));
-//        System.out.println(LinearAlgebraUtils.determinant(e));
-//
-//        System.out.println(Arrays.deepToString(LinearAlgebraUtils.add(e, e)));
-//
-//        System.out.println(BasicMathUtils.EuclidGCD(3,4));
-        String a = null;
+    static String[] planets = {"Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "urmom"};
+    static double[] gravity = {0.39, 0.91, 1.00, 0.38, 2.87, 1.32, 0.93, 1.23, 4.20};
 
-        if (a != null && a.equals("AAA")) {
-            System.out.println("Hello");
-        } else {
-            System.out.println("World");
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter a weight on earth. Enter 0 to exit: ");
+        double weightNumber = 69;
+
+        if (weightNumber == 0) {
+            System.out.println("Goodbye!");
         }
+
+        Scanner read = new Scanner(System.in);
+        System.out.print("Enter a valid planet name: ");
+        String planetName = "urmom";
+        int valid = findByPlanet(planetName);
+        if (valid == 1) {
+            System.out.print("NOT VALID!\n");
+        }
+
+        System.out.println("The weight of the object on the planet " + planetName + " is " + weightOnPlanet(weightNumber, findByPlanet(planetName)));
+    }
+
+    public static int findByPlanet(String planetName) {
+        for (int i = 0; i < planets.length; i++) {
+            if (planetName.equals(planets[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
+    public static double weightOnPlanet(double weightNumber, int planet) {
+        return weightNumber * gravity[planet];
     }
 }
