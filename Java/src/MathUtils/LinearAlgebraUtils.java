@@ -1,30 +1,6 @@
 package MathUtils;
 
 public class LinearAlgebraUtils {
-//    public static <T extends Number> T[][]  matrixMultiplication(T[][] a, T[][] b) {
-//        T[][] c = new T[a.length][b[0].length];
-////        if (isNotMatrix(a) || isNotMatrix(b)) {
-////            throw new ArithmeticException("Your input is not a matrix.");
-////        }
-////        if (!dimensionAgreement(a, b)) {
-////            throw new ArithmeticException("Your matrices do not agree in dimension.");
-////        }
-//        for (int i = 0; i < c.length; i++) {
-//            for (int j = 0; j < c[0].length; j++) {
-//                double[] temp1 = rowExtractor(a, i);
-//                double[] temp2 = columnExtractor(b, j);
-//                Number cij = new Number() {
-//                } 0;
-//                for (int k = 0; k < temp1.length; k++) {
-//                    cij += temp1[k] * temp2[k];
-//                }
-//                c[i][j] = cij;
-//            }
-//        }
-//        return c;
-//    }
-
-
     public static double[][] matrixMultiplication(double[][] a, double[][] b) {
         double[][] c = new double[a.length][b[0].length];
         if (isNotMatrix(a) || isNotMatrix(b)) {
@@ -47,7 +23,7 @@ public class LinearAlgebraUtils {
         return c;
     }
 
-    public static <T extends Number> boolean isNotMatrix(T[][] a) {
+    public static boolean isNotMatrix(double[][] a) {
         int temp = a[0].length;
         for (int i = 1; i < a.length; i++) {
             if (a[i].length != temp) {
@@ -57,8 +33,8 @@ public class LinearAlgebraUtils {
         return false;
     }
 
-    public static <T extends Number> T[] rowExtractor(T[][] input, int no) {
-        T[] output = new T[input[no].length];
+    public static double[] rowExtractor(double[][] input, int no) {
+        double[] output = new double[input[no].length];
         for (int i = 0; i < input[no].length; i++) {
             output[i] = input[no][i];
         }
@@ -94,18 +70,18 @@ public class LinearAlgebraUtils {
         return output;
     }
 
-    public static <T extends Number> boolean isSquareMatrix(T[][] a) {
+    public static boolean isSquareMatrix(double[][] a) {
         if (isNotMatrix(a)) {
             throw new ArithmeticException("Check your matrix.");
         }
-        return rowLength(a).equals(columnLength(a));
+        return rowLength(a) == columnLength(a);
     }
 
-    public static <T extends Number> Integer rowLength(T[][] a) {
+    public static int rowLength(double[][] a) {
         return rowExtractor(a,0).length;
     }
 
-    public static <T extends Number> Integer columnLength(T[][] a) {
+    public static int columnLength(double[][] a) {
         return columnExtractor(a,0).length;
     }
 
