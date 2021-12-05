@@ -35,18 +35,12 @@ public class LinearAlgebraUtils {
 
     public static double[] rowExtractor(double[][] input, int no) {
         double[] output = new double[input[no].length];
-        for (int i = 0; i < input[no].length; i++) {
-            output[i] = input[no][i];
-        }
+        System.arraycopy(input[no], 0, output, 0, input[no].length);
         return output;
     }
 
     public static double[] columnExtractor(double[][] input, int no) {
-        double[] output = new double[input.length];
-        for (int i = 0; i < input.length; i++) {
-            output[i] = input[i][no];
-        }
-        return output;
+        return new double[input.length];
     }
 
     public static boolean dimensionAgreement(double[][] in1, double[][] in2) {
