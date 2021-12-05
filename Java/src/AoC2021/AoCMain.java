@@ -11,7 +11,7 @@ public class AoCMain {
 //        String folder = userInput.nextLine();
         String folder = System.getProperty("user.dir")+"/src/AoC2021/input/";
         int minDay = 1;
-        int maxDay = 3;
+        int maxDay = 4;
 
         for (int i = minDay; i <= maxDay; i++) {
             Class<?> c = Class.forName("AoC2021.AoC"+i);
