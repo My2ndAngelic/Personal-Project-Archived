@@ -35,9 +35,9 @@ public class AoC4 {
 
         }
 
-        for (Board b : boardArrayList) {
-            System.out.println(Arrays.deepToString(b.getBoard()));
-        }
+//        for (Board b : boardArrayList) {
+//            System.out.println(Arrays.deepToString(b.getBoard()));
+//        }
         return -1;
     }
 
