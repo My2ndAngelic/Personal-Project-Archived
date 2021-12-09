@@ -10,7 +10,7 @@ public class AoC7 {
         for (int i = 0; i < fuelArray.length; i++) {
             int temp = 0;
             for (int j = 0; j < fuelArray.length; j++) {
-                temp += Math.abs(fuelArray[i] - fuelArray[j]);
+                temp += Math.abs(fuelArray[j] -i);
                 if (temp >= smallest) {
                     break;
                 }
@@ -22,15 +22,18 @@ public class AoC7 {
         return smallest;
     }
 
-    public static int fuelCount2(String dataIn) {
+    public static int fuelCount2a(String dataIn) {
         int[] fuelArray = Arrays.stream(dataIn.split(",")).mapToInt(Integer::parseInt).toArray();
         int smallest = Integer.MAX_VALUE;
         for (int i = 0; i < fuelArray.length; i++) {
             int temp = 0;
             for (int j = 0; j < fuelArray.length; j++) {
-                temp += Math.abs(fuelArray[i] - fuelArray[j]);
-                if (temp >= smallest) {
-                    break;
+                if (fuelArray[j] != i) {
+                    int diff = Math.abs(fuelArray[j] - i);
+                    temp += (diff) * (diff + 1) /2;
+                    if (temp >= smallest) {
+                        break;
+                    }
                 }
             }
             if (temp < smallest) {
@@ -45,14 +48,14 @@ public class AoC7 {
     }
 
     public static int problemTwo(ArrayList<String> dataIn) {
-        return -1;
+        return fuelCount2a(dataIn.get(0));
     }
 
     public static void main(String[] args) {
         String test = "16,1,2,0,4,2,7,1,2,14";
         System.out.println(fuelCount1a(test));
-
         System.out.println(fuelCount1b(test));
+        System.out.println(fuelCount2a(test));
     }
 
     // Courtesy: https://github.com/sumsar1812/AOC2021/tree/master/Day6
