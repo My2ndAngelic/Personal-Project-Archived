@@ -2,7 +2,6 @@ package AoC2021;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class AoCMain {
     public static void main(String[] args) throws Exception {
@@ -11,7 +10,7 @@ public class AoCMain {
 //        String folder = userInput.nextLine();
         String folder = System.getProperty("user.dir")+"/src/AoC2021/input/";
         int minDay = 1;
-        int maxDay = 7;
+        int maxDay = 8;
 
         for (int i = minDay; i <= maxDay; i++) {
             Class<?> c = Class.forName("AoC2021.AoC"+i);
