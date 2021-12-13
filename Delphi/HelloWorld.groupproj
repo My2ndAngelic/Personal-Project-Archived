@@ -6,7 +6,7 @@
         <Projects Include="Project1.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="..\Delphi\NegativePower2.dproj">
+        <Projects Include="NegativePower2.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -27,13 +27,13 @@
         <MSBuild Projects="Project1.dproj" Targets="Make"/>
     </Target>
     <Target Name="NegativePower2">
-        <MSBuild Projects="..\Delphi\NegativePower2.dproj"/>
+        <MSBuild Projects="NegativePower2.dproj"/>
     </Target>
     <Target Name="NegativePower2:Clean">
-        <MSBuild Projects="..\Delphi\NegativePower2.dproj" Targets="Clean"/>
+        <MSBuild Projects="NegativePower2.dproj" Targets="Clean"/>
     </Target>
     <Target Name="NegativePower2:Make">
-        <MSBuild Projects="..\Delphi\NegativePower2.dproj" Targets="Make"/>
+        <MSBuild Projects="NegativePower2.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
         <CallTarget Targets="Project1;NegativePower2"/>

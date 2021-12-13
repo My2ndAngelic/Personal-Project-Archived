@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2021/11/14 02:07:52.038,C:\Users\My2ndAngelic\Documents\GitHub\Personal-Project\Lazarus\HelloWorld.groupproj=C:\Users\My2ndAngelic\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+	<Transactions>
+    <Transaction>2021/11/14 02:07:52.000.038,C:\Users\My2ndAngelic\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\Users\My2ndAngelic\Documents\GitHub\Personal-Project\Lazarus\HelloWorld.groupproj</Transaction>
   </Transactions>
-  <Default.Personality>
-    <Projects ActiveProject="C:\Users\My2ndAngelic\Documents\GitHub\Personal-Project\Delphi\NegativePower2.dproj"/>
-  </Default.Personality>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Users\My2ndAngelic\Documents\GitHub\Personal-Project\Delphi\Project1.dproj"/>
+	</Default.Personality>
 </BorlandProject>
