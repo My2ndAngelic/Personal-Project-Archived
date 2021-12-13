@@ -10,15 +10,14 @@ implementation
     Double := Value * 2;
   end;
 
-  function FileReaderToArray(MyInput : String): TList<String>;
-  type
-    MyFile = File of String;
+  function FileReaderToArray(fileDir : String): TList<String>;
   var
+    MyFile: TextFile;
     MyReturn : TList<String>;
   begin
   MyReturn := TList<String>.Create;
     try
-
+      AssignFile(MyFile, fileDir);
     finally
 
     end;
