@@ -1,26 +1,39 @@
 unit AoCUtilities;
 
 interface
-uses
-  SysUtils, Generics.Collections;
+
+uses SysUtils, Generics.Collections;
+function DoubleIt(Value: Integer): Integer;
+function FileReaderToTListString(fileDir: String): TList<String>;
 
 implementation
-  function Double(Value: Integer): Integer;
-  begin
-    Double := Value * 2;
-  end;
 
-  function FileReaderToArray(fileDir : String): TList<String>;
-  var
-    MyFile: TextFile;
-    MyReturn : TList<String>;
-  begin
+function DoubleIt(Value: Integer): Integer;
+begin
+  DoubleIt := Value * 2;
+end;
+
+function FileReaderToTListString(fileDir: String): TList<String>;
+var
+  MyFile: TextFile;
+  MyReturn: TList<String>;
+  TempStr: String;
+begin
   MyReturn := TList<String>.Create;
-    try
-      AssignFile(MyFile, fileDir);
-    finally
-
+  try
+    AssignFile(MyFile, fileDir);
+    Reset(MyFile);
+    while (not eof(MyFile)) do
+    begin
+      readln(MyFile, TempStr);
+      MyReturn.add(TempStr);
     end;
+    Close(MyFile);
+    FileReaderToTListString := MyReturn;
+  except
+    on E: Exception do
+      Writeln('File at ' + fileDir + ' not found.');
   end;
+end;
 
 end.

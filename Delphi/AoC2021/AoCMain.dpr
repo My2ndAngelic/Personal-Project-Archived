@@ -5,14 +5,31 @@ program AoCMain;
 {$R *.res}
 
 uses
-  System.SysUtils,
-  AoCUtilities in 'AoCUtilities.pas';
+  System.SysUtils, Generics.Collections, Classes,
+  AoCUtilities in 'AoCUtilities.pas',
+  AoC1 in 'AoC1.pas';
+
+type
+  StrArray = array of String;
+
+var
+  dataIn: StrArray;
+  temp: String;
+  TempTLS:  TList<String>;
 
 begin
-  try
-    { TODO -oUser -cConsole Main : Insert code here }
-  except
-    on E: Exception do
-      Writeln(E.ClassName, ': ', E.Message);
-  end;
+    try
+      Writeln('Hello');
+      SetCurrentDir('../../input/');
+      TempTLS := TList<String>.Create(AoCUtilities.FileReaderToTListString('input1.txt'));
+      Writeln(TempTLS.Count);
+      Writeln('Success');
+      Readln;
+    except
+      on E: Exception do
+      begin
+        WriteLn(E.ClassName+ ': ' + E.Message);
+      end;
+    end;
 end.
+
