@@ -42,7 +42,7 @@ begin
   for I := 0 to Length(dataArray)-2 do
     begin
       if dataArray[i] < dataArray[i+1] then
-        Temp := Temp + 1;
+        Inc(Temp);
     end;
   ProblemOne := Temp;
 end;
