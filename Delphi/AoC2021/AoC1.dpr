@@ -1,13 +1,15 @@
-program AoCMain;
+program AoC1;
 
 {$APPTYPE CONSOLE}
 
 {$R *.res}
 
 uses
-  System.SysUtils, Generics.Collections, Classes,
+  System.SysUtils,
+  Generics.Collections,
+  Classes,
   AoCUtilities in 'AoCUtilities.pas',
-  AoC1 in 'AoC1.pas';
+  AoC1Helper in 'AoC1Helper.pas';
 
 type
   StrArray = array of String;
@@ -16,19 +18,22 @@ var
   dataIn: StrArray;
   temp: String;
   TempTLS:  TList<String>;
+  Output: Integer;
 
 begin
     try
-      Writeln('Hello');
       SetCurrentDir('../../input/');
+      IntToStr(8);
       TempTLS := TList<String>.Create(AoCUtilities.FileReaderToTListString('input1.txt'));
-      Writeln(TempTLS.Count);
-      Writeln('Success');
+      Output := AoC1Helper.problemOne(TempTLS);
+      Writeln('Problem 1: ', AoC1Helper.problemOne(TempTLS));
+      Writeln('Problem 2: ', AoC1Helper.problemTwo(TempTLS));
       Readln;
     except
       on E: Exception do
       begin
-        WriteLn(E.ClassName+ ': ' + E.Message);
+        WriteLn(E.ClassName+ ': ' + E.Message + ' ' + E.StackTrace);
+        Readln;
       end;
     end;
 end.
