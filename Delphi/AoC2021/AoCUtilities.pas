@@ -5,6 +5,7 @@ interface
 uses SysUtils, Generics.Collections;
 function DoubleIt(Value: Integer): Integer;
 function FileReaderToTListString(fileDir: String): TList<String>;
+procedure SayHello(input: String);
 
 implementation
 
@@ -25,7 +26,7 @@ begin
     Reset(MyFile);
     while (not eof(MyFile)) do
     begin
-      readln(MyFile, TempStr);
+      Readln(MyFile, TempStr);
       MyReturn.add(TempStr);
     end;
     Close(MyFile);
@@ -34,6 +35,11 @@ begin
     on E: Exception do
       Writeln('File at ' + fileDir + ' not found.');
   end;
+end;
+
+procedure SayHello(input: String);
+begin
+  Writeln('Hello ', input);
 end;
 
 end.
