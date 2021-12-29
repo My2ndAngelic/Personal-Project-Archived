@@ -25,9 +25,9 @@ begin
       SetCurrentDir('../../input/');
       IntToStr(8);
       TempTLS := TList<String>.Create(AoCUtilities.FileReaderToTListString('input1.txt'));
-      Output := AoC1Helper.problemOne(TempTLS);
-      Writeln('Problem 1: ', AoC1Helper.problemOne(TempTLS));
-      Writeln('Problem 2: ', AoC1Helper.problemTwo(TempTLS));
+      Output := AoC1Helper.ProblemOne(TempTLS);
+      Writeln('Problem 1: ', AoC1Helper.ProblemOne(TempTLS));
+      Writeln('Problem 2: ', AoC1Helper.ProblemTwo(TempTLS));
       Readln;
     except
       on E: Exception do

@@ -1,4 +1,10 @@
-﻿namespace AoC2020
+﻿using System;
+using System.IO;
+using System.Linq;
+using System.Management.Instrumentation;
+using System.Reflection;
+
+namespace AoC2020
 {
     public static class Day2
     {

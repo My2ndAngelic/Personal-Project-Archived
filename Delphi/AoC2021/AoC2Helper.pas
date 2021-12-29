@@ -1,4 +1,4 @@
-unit AoC1Helper;
+unit AoC2Helper;
 
 interface
 
@@ -24,40 +24,12 @@ begin
   end;
 end;
 
-function Count(dataArray: IntegerArray): Integer;
-begin
-
-end;
-
 function ProblemOne(dataIn: TList<String>): Integer;
-type
-  Tdata = array of Integer;
-var
-  dataArray: IntegerArray;
-  I: Integer;
-  Code: Integer;
-  Temp: Integer;
 begin
-  SetLength(dataArray, dataIn.Count);
-  SetIntegerArray(dataIn, dataArray);
-  Temp := 0;
-  for I := 0 to Length(dataArray) - 2 do
-  begin
-    if dataArray[I] < dataArray[I + 1] then
-      Inc(Temp);
-  end;
-  ProblemOne := Temp;
+  ProblemOne := 0;
 end;
 
 function ProblemTwo(dataIn: TList<String>): Integer;
-type
-  Tdata = array of Integer;
-var
-  dataArray: IntegerArray;
-  I: Integer;
-  Code: Integer;
-  Temp: Integer;
-
 begin
   ProblemTwo := 0;
 end;

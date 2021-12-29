@@ -34,5 +34,3 @@ def div9(a):
         b = a + 10 ** tmp * i
         if b % 9 == 0:
             return b
-
-main()
