@@ -1,6 +1,7 @@
 def main():
     k = 1
-    x = 25
+    x = 1
+
     # for x in range(k, k+101):
     lst = []
     print(x)
@@ -9,7 +10,7 @@ def main():
         if x % 2 == 0:
             x //= 2
         else:
-            x = 3 * x + 7
+            x = 3 * x + 3
         print(x)
     print('---')
 
