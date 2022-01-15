@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Text;
 
-namespace CSharp
+namespace CSharp_DNF
 {
-    public static class MainClass
+    public static class Program
     {
         public static void Main(string[] args)
         {
@@ -28,11 +27,11 @@ namespace CSharp
             }
             stringBuilder.Append("]");
 
-            Console.WriteLine(stringBuilder.ToString());
-            Console.ReadLine();*/
+            CSharp.DNF.WriteLine(stringBuilder.ToString());
+            CSharp.DNF.ReadLine();*/
 
-            double c = 3.9;
-            long d = (long) ((c % 1) - c);
+            var c = 3.9;
+            var d = (long) (c % 1 - c);
             Console.WriteLine(d);
             Console.ReadLine();
         }

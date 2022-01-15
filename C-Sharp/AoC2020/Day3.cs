@@ -35,7 +35,7 @@ namespace AoC2020
                 TreeCounter(a, 1, 2)
             };
 
-            // Console.WriteLine("[" + string.Join(", ", tempout2) + "]");
+            // CSharp_DNF.WriteLine("[" + string.Join(", ", tempout2) + "]");
 
             var b = tempout2.Aggregate<int, long>(1, (current, i) => current * i);
             Console.WriteLine(b);

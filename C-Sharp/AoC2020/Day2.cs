@@ -58,7 +58,7 @@ namespace AoC2020
                 }
             }
 
-            // Console.WriteLine(b1.Length + " " + b2.Length + " " + b3.Length + " " + b4.Length);
+            // CSharp_DNF.WriteLine(b1.Length + " " + b2.Length + " " + b3.Length + " " + b4.Length);
             Console.WriteLine(validPass2);
             Console.ReadLine();
         }

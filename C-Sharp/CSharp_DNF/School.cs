@@ -1,33 +1,28 @@
-using System.Management.Instrumentation;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Security.Permissions;
-
-namespace CSharp
+namespace CSharp_DNF
 {
     public class School
     {
-        private string Name;
-        private int Age;
+        private readonly int Age;
+        private readonly string Name;
 
         public School(string name, int age)
         {
-            this.Age = age;
-            this.Name = name;
+            Age = age;
+            Name = name;
         }
 
         public string GetName()
         {
-            return this.Name;
+            return Name;
         }
 
         public int GetAge()
         {
-            return this.Age;
+            return Age;
         }
     }
 
-    class Teacher : School
+    internal class Teacher : School
     {
         private string Subject;
         private int Time;
@@ -44,28 +39,28 @@ namespace CSharp
         }
     }
 
-    class Student : School
+    internal class Student : School
     {
-        private string Level;
+        private readonly string Level;
 
-        public string GetLevel()
-        {
-            return this.Level;
-        }
-        
-        private string Rank;
-        
-        public string GetRank()
-        {
-            return this.Rank;
-        }
+        private readonly string Rank;
 
         public Student(string name, int age, string level, string rank) : base(name, age)
         {
-            this.Level = level;
-            this.Rank = rank;
+            Level = level;
+            Rank = rank;
         }
-        
+
+        public string GetLevel()
+        {
+            return Level;
+        }
+
+        public string GetRank()
+        {
+            return Rank;
+        }
+
         public override string ToString()
         {
             return "Student: " + GetName() + " " + GetAge() + " " + GetLevel() + " " + GetRank();
