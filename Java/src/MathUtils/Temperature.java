@@ -46,18 +46,24 @@ public class Temperature {
         throw new IllegalArgumentException("Check your input.");
     }
 
+    /**
+     * Main method for testing
+     *
+     * @param args do not care
+     */
     public static void main(String[] args) {
         String tempK = "420.15K";
         String tempF = "69F";
         String tempC = "37C";
-        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempK, "K")));
-        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempK, "F")));
-        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempK, "C")));
-        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempF, "K")));
-        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempF, "F")));
-        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempF, "C")));
-        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempC, "K")));
-        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempC, "F")));
-        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempC, "C")));
+        DecimalFormat df = new DecimalFormat("#0.00");
+        System.out.println(df.format(tempConverter(tempK, "K")));
+        System.out.println(df.format(tempConverter(tempK, "F")));
+        System.out.println(df.format(tempConverter(tempK, "C")));
+        System.out.println(df.format(tempConverter(tempF, "K")));
+        System.out.println(df.format(tempConverter(tempF, "F")));
+        System.out.println(df.format(tempConverter(tempF, "C")));
+        System.out.println(df.format(tempConverter(tempC, "K")));
+        System.out.println(df.format(tempConverter(tempC, "F")));
+        System.out.println(df.format(tempConverter(tempC, "C")));
     }
 }
