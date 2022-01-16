@@ -1,18 +1,63 @@
 package MathUtils;
 
-import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Temperature {
 
-    public static int doSomething(String s) {
-        return s.length();
+    /**
+     * Convert your temperature. Support: K, F, C. Note: 1K = 273.15oC
+     *
+     * @param sourceString source temperature in string. Example: 420.15K, 69F, 37C
+     * @param destTemp     destination temperature. Support: K, F, C
+     * @return temperature value in double.
+     */
+    public static double tempConverter(String sourceString, String destTemp) {
+        String sourceTemp = sourceString.substring(sourceString.length() - 1);
+        double inputTemperature = Double.parseDouble(sourceString.substring(0, sourceString.length() - 1));
+        switch (sourceTemp.toUpperCase()) {
+            case "K":
+                switch (destTemp.toUpperCase()) {
+                    case "K":
+                        return inputTemperature;
+                    case "F":
+                        return (inputTemperature - 273.15) * 9 / 5 + 32;
+                    case "C":
+                        return inputTemperature - 273.15;
+                }
+            case "F":
+                switch (destTemp) {
+                    case "K":
+                        return (inputTemperature - 32) / 9 * 5 + 273.15;
+                    case "F":
+                        return inputTemperature;
+                    case "C":
+                        return (inputTemperature - 32) / 9 * 5;
+                }
+            case "C":
+                switch (destTemp) {
+                    case "K":
+                        return inputTemperature + 273.15;
+                    case "F":
+                        return inputTemperature * 9 / 5 + 32;
+                    case "C":
+                        return inputTemperature;
+                }
+        }
+        throw new IllegalArgumentException("Check your input.");
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Your name: ");
-        int s = Integer.parseInt(sc.nextLine());
-        System.out.println("Hello " + s);
+        String tempK = "420.15K";
+        String tempF = "69F";
+        String tempC = "37C";
+        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempK, "K")));
+        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempK, "F")));
+        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempK, "C")));
+        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempF, "K")));
+        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempF, "F")));
+        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempF, "C")));
+        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempC, "K")));
+        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempC, "F")));
+        System.out.println(new DecimalFormat("#0.00").format(tempConverter(tempC, "C")));
     }
 }
