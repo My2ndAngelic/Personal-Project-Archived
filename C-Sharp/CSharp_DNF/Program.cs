@@ -27,8 +27,8 @@ namespace CSharp_DNF
             }
             stringBuilder.Append("]");
 
-            CSharp.DNF.WriteLine(stringBuilder.ToString());
-            CSharp.DNF.ReadLine();*/
+            Console.WriteLine(stringBuilder.ToString());
+            Console.ReadLine();*/
 
             var c = 3.9;
             var d = (long) (c % 1 - c);
