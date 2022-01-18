@@ -1,6 +1,6 @@
 package MathUtils.Generic;
 
-public interface GenericLinearAlgebra<T> {
+public interface IGenericLinearAlgebra<T extends Number> {
     T[][] matrixAdd(T[][] a, T[][] b);
 
     T[][] matrixSubtract(T[][] a, T[][] b);
