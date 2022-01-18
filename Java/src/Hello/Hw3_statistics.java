@@ -14,7 +14,7 @@ public class Hw3_statistics {
         double cap = 6.0;
 
         //cap is correct answer percentage
-        String s1 = String.format("%10s %10s %10s %10s %10s %10s %10s", "ID" , "Right" ,"Wrong" , "Answered", "Omitted", "Grade", "Cap");
+        String s1 = String.format("%10s %10s %10s %10s %10s %10s %10s", "ID", "Right", "Wrong", "Answered", "Omitted", "Grade", "Cap");
         String s2 = String.format("%10s %10s %10s %10s %10s %10s %10s", id, right, wrong, answered, omitted, grade, cap);
         String s3 = String.format("%10s %10s %10s %10s %10s %10s %10s", 100, 69, 420, 69420, 0, 1337, 1);
         System.out.println(s1);

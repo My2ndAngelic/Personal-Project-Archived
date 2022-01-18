@@ -11,7 +11,7 @@ public class AoCUtilities {
         File myFile = new File(path);
         Scanner sc = new Scanner(myFile);
         ArrayList<String> myData = new ArrayList<>();
-        while  (sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
             myData.add(sc.nextLine());
         }
         return myData;

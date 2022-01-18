@@ -1,8 +1,5 @@
 package AoC2021;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class AoCTest {
 
     public static void main(String[] args) {

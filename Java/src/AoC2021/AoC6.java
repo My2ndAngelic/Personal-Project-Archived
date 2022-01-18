@@ -62,10 +62,10 @@ public class AoC6 {
 
     public static long problemOne(ArrayList<String> dataIn) {
 //        return spawn(Arrays.stream(dataIn.get(0).split(",")).mapToInt(Integer::parseInt).collect(ArrayList::new, List::add, ArrayList::addAll),80).size();
-        return spawn3(dataIn.get(0),80);
+        return spawn3(dataIn.get(0), 80);
     }
 
     public static long problemTwo(ArrayList<String> dataIn) {
-        return spawn3(dataIn.get(0),256);
+        return spawn3(dataIn.get(0), 256);
     }
 }

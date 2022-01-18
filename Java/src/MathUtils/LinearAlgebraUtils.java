@@ -72,11 +72,11 @@ public class LinearAlgebraUtils {
     }
 
     public static int rowLength(double[][] a) {
-        return rowExtractor(a,0).length;
+        return rowExtractor(a, 0).length;
     }
 
     public static int columnLength(double[][] a) {
-        return columnExtractor(a,0).length;
+        return columnExtractor(a, 0).length;
     }
 
     // Start SOF part: https://stackoverflow.com/questions/16602350/calculating-matrix-determinant
@@ -88,25 +88,25 @@ public class LinearAlgebraUtils {
             res = a[0][0] * a[1][1] - a[1][0] * a[0][1];
         } else {
             res = 0;
-            for (int j1 = 0; j1 < n; j1++){
-                double[][] m = generateSubArray (a, n, j1);
-                res += Math.pow(-1.0, 1.0+j1+1.0) * a[0][j1] * determinant1(m, n-1);
+            for (int j1 = 0; j1 < n; j1++) {
+                double[][] m = generateSubArray(a, n, j1);
+                res += Math.pow(-1.0, 1.0 + j1 + 1.0) * a[0][j1] * determinant1(m, n - 1);
             }
         }
         return res;
     }
 
-    private static double[][] generateSubArray (double A[][], int N, int j1){
-        double[][] m = new double[N-1][];
-        for (int k=0; k<(N-1); k++)
-            m[k] = new double[N-1];
+    private static double[][] generateSubArray(double[][] A, int N, int j1) {
+        double[][] m = new double[N - 1][];
+        for (int k = 0; k < (N - 1); k++)
+            m[k] = new double[N - 1];
 
-        for (int i=1; i<N; i++){
-            int j2=0;
-            for (int j=0; j<N; j++){
-                if(j == j1)
+        for (int i = 1; i < N; i++) {
+            int j2 = 0;
+            for (int j = 0; j < N; j++) {
+                if (j == j1)
                     continue;
-                m[i-1][j2] = A[i][j];
+                m[i - 1][j2] = A[i][j];
                 j2++;
             }
         }

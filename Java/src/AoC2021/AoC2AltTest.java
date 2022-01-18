@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class AoC2AltTest {
     public static void main(String[] args) throws FileNotFoundException {
         // Problem 1
-        AoC2Alt aoC2Alt = new AoC2Alt(AoCUtilities.fileImportToStringArrayList(System.getProperty("user.dir")+"/src/AoC2021/input/input2.txt"));
+        AoC2Alt aoC2Alt = new AoC2Alt(AoCUtilities.fileImportToStringArrayList(System.getProperty("user.dir") + "/src/AoC2021/input/input2.txt"));
         ArrayList<String> data = aoC2Alt.getData();
         for (String s : data) {
             String[] ss = s.split(" ");
@@ -14,7 +14,7 @@ public class AoC2AltTest {
         }
         System.out.println(aoC2Alt.getPos());
 
-        AoC2Alt aoC2Alt2 = new AoC2Alt(AoCUtilities.fileImportToStringArrayList(System.getProperty("user.dir")+"/src/AoC2021/input/input2.txt"));
+        AoC2Alt aoC2Alt2 = new AoC2Alt(AoCUtilities.fileImportToStringArrayList(System.getProperty("user.dir") + "/src/AoC2021/input/input2.txt"));
         data = aoC2Alt2.getData();
         // Problem 2
         for (String s : data) {

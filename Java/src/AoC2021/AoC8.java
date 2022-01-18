@@ -17,7 +17,7 @@ public class AoC8 {
     public static ArrayList<LeDisplay> getDisplayOut(ArrayList<String> dataIn) {
         ArrayList<LeDisplay> ld = new ArrayList<>();
         for (String i : dataIn) {
-            String[] tempStringArray = stringSplit(i,1);
+            String[] tempStringArray = stringSplit(i, 1);
             for (String j : tempStringArray) {
                 if (j.chars().allMatch(Character::isLetter)) {
                     ld.add(new LeDisplay(j));
@@ -31,7 +31,7 @@ public class AoC8 {
         int count = 0;
         ArrayList<LeDisplay> ld = getDisplayOut(dataIn);
         for (int i = 0; i < ld.size() - 4; i++) {
-            count += 1000 * ld.get(i).getNumber() + 100 * ld.get(i+1).getNumber() + 10 * ld.get(i+2).getNumber() + 1 * ld.get(i+3).getNumber();
+            count += 1000 * ld.get(i).getNumber() + 100 * ld.get(i + 1).getNumber() + 10 * ld.get(i + 2).getNumber() + 1 * ld.get(i + 3).getNumber();
         }
         return count;
     }
@@ -64,28 +64,27 @@ public class AoC8 {
 }
 
 class LeDisplay {
-    public String getInput() {
-        return input;
-    }
-
+    private final String[] defaultMap = "abcdefg".chars().mapToObj(Character::toString).toArray(String[]::new);
     private String input;
     private String[] code;
     private String[] newMap;
-    private final String[] defaultMap = "abcdefg".chars().mapToObj(Character::toString).toArray(String[]::new);
-
-
     LeDisplay(String in) {
         if (in.chars().allMatch(Character::isAlphabetic)) {
-            this.input = in.replaceAll("\\s+","");
+            this.input = in.replaceAll("\\s+", "");
         }
     }
 
+
     LeDisplay(String in, String[] code) {
         if (in.chars().allMatch(Character::isAlphabetic)) {
-            this.input = in.replaceAll("\\s+","");
+            this.input = in.replaceAll("\\s+", "");
             this.code = code;
             this.newMap = theConnector(code);
         }
+    }
+
+    public String getInput() {
+        return input;
     }
 
     private String[] theConnector(String[] code) {

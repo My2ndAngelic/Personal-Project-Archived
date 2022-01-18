@@ -29,9 +29,9 @@ public class BasicMathUtils {
         } else if (a == b) {
             return a;
         } else if (a > b) {
-            return EuclidGCD(a-b,b);
+            return EuclidGCD(a - b, b);
         } else {
-            return EuclidGCD(a,b-a);
+            return EuclidGCD(a, b - a);
         }
     }
 

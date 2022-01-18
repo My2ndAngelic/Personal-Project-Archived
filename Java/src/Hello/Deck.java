@@ -2,13 +2,8 @@ package Hello;
 
 public class Deck {
 
-    public Card[] getDeck() {
-        return deck;
-    }
-
-    private Card[] deck;
+    private final Card[] deck;
     private int count;
-
     Deck(boolean shuffle) {
         this.deck = new Card[52];
         int count = 0;
@@ -19,6 +14,10 @@ public class Deck {
             }
         }
         this.count = deck.length;
+    }
+
+    public Card[] getDeck() {
+        return deck;
     }
 
     public Card deal() {

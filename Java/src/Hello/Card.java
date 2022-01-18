@@ -1,10 +1,10 @@
 package Hello;
 
 public class Card {
-    private int suit;
-    private int val;
     private final String[] vals = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     private final String[] suits = {"Hearts", "Clubs", "Diamonds", "Spades"};
+    private int suit;
+    private int val;
 
     Card() {
 
