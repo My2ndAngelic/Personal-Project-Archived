@@ -3,8 +3,6 @@ package AoC2021;
 import java.util.ArrayList;
 
 public class AoC2 {
-    enum Movement {forward, down, up};
-
     public static int problemOne(ArrayList<String> dataIn) {
         int horizontal = 0;
         int vertical = 0;
@@ -40,4 +38,6 @@ public class AoC2 {
         }
         return horizontal * vertical;
     }
+
+    enum Movement {forward, down, up}
 }

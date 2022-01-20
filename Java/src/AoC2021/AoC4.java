@@ -14,7 +14,7 @@ public class AoC4 {
             String dataFromInput = input.get(i);
             if (dataFromInput.isEmpty()) { // If empty line, add board and empty it
                 boardArrayList.add(temp);
-                temp = new Board(5,5);
+                temp = new Board(5, 5);
             } else { // Copy all the array to each line of the board
                 String[] a = dataFromInput.split("\\s+");
                 String[] b = new String[5];
@@ -53,6 +53,7 @@ class Board {
     Board(int[][] input) {
         this.data = input;
     }
+
     Board() {
     }
 
@@ -61,7 +62,7 @@ class Board {
     }
 
     public int getPos(int x, int y) {
-        return this.data[x-1][y-1];
+        return this.data[x - 1][y - 1];
     }
 
     public void setData(int[][] input) {

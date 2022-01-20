@@ -6,8 +6,8 @@ public class GenericLinearAlgebraUtils { // Unfinished code, bug expected
     /**
      * Check if your input is a 2D-filled matrix.
      * @param input A
-     * @param <T> Type
-     * @return
+     * @param <T> A
+     * @return A
      */
     public static <T extends Number> Boolean isMatrix(T[][] input) {
         T[] temp = input[0];
@@ -21,9 +21,10 @@ public class GenericLinearAlgebraUtils { // Unfinished code, bug expected
 
     /**
      * Extract row from your matrix. Row starts from 1.
+     *
      * @param input the matrix in 2D array format
-     * @param no the row you want to extract
-     * @param <T> type of the input
+     * @param no    the row you want to extract
+     * @param <T>   type of the input
      * @return data from the row
      */
     public static <T extends Number> T[] rowExtract(T[][] input, Integer no) {
@@ -42,7 +43,7 @@ public class GenericLinearAlgebraUtils { // Unfinished code, bug expected
         } else {
             T[] output = (T[]) new Number[input[no - 1].length];
             for (int i = 0; i < input.length; i++) {
-                output[i] = input[i][no-1];
+                output[i] = input[i][no - 1];
             }
             return output;
         }

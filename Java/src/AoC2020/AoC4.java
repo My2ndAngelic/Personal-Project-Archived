@@ -112,16 +112,16 @@ public class AoC4 {
         String st = getField(s, "hgt");
         st = st.toLowerCase();
         if (st.length() == 4) {
-            if (st.charAt(2) == 'i'  && st.charAt(3) == 'n') {
+            if (st.charAt(2) == 'i' && st.charAt(3) == 'n') {
                 if (Character.isDigit(st.charAt(0)) && Character.isDigit(st.charAt(1))) {
-                    int a = 10*Integer.parseInt(String.valueOf(st.charAt(0))) + Integer.parseInt(String.valueOf(st.charAt(1)));
+                    int a = 10 * Integer.parseInt(String.valueOf(st.charAt(0))) + Integer.parseInt(String.valueOf(st.charAt(1)));
                     return 59 <= a && a <= 76;
                 }
             }
         } else if (st.length() == 5) {
-            if (st.charAt(3) == 'c'  && st.charAt(4) == 'm') {
+            if (st.charAt(3) == 'c' && st.charAt(4) == 'm') {
                 if (Character.isDigit(st.charAt(0)) && Character.isDigit(st.charAt(1)) && Character.isDigit(st.charAt(2))) {
-                    int a = 100*Integer.parseInt(String.valueOf(st.charAt(0))) + 10*Integer.parseInt(String.valueOf(st.charAt(1))) + Integer.parseInt(String.valueOf(st.charAt(2)));
+                    int a = 100 * Integer.parseInt(String.valueOf(st.charAt(0))) + 10 * Integer.parseInt(String.valueOf(st.charAt(1))) + Integer.parseInt(String.valueOf(st.charAt(2)));
                     return 150 <= a && a <= 193;
                 }
             }
@@ -141,7 +141,8 @@ public class AoC4 {
                     }
                 }
             }
-        } return counter==0;
+        }
+        return counter == 0;
     }
 
     public static boolean isValidEyeColor(String s) {

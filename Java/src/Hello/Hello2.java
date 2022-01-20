@@ -1,6 +1,6 @@
 package Hello;
 
-public class Hello2 implements Hello{
+public class Hello2 implements Hello {
     @Override
     public String X() {
         return "Hello.Hello 2X";

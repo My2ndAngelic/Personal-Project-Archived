@@ -10,7 +10,7 @@ public class AoC7 {
         for (int i = 0; i < fuelArray.length; i++) {
             int temp = 0;
             for (int j = 0; j < fuelArray.length; j++) {
-                temp += Math.abs(fuelArray[j] -i);
+                temp += Math.abs(fuelArray[j] - i);
                 if (temp >= smallest) {
                     break;
                 }
@@ -30,7 +30,7 @@ public class AoC7 {
             for (int j = 0; j < fuelArray.length; j++) {
                 if (fuelArray[j] != i) {
                     int diff = Math.abs(fuelArray[j] - i);
-                    temp += (diff) * (diff + 1) /2;
+                    temp += (diff) * (diff + 1) / 2;
                     if (temp >= smallest) {
                         break;
                     }
@@ -73,7 +73,7 @@ public class AoC7 {
 
         // Keep going up/down until hitting the bigger
         for (int i = 1; i < Integer.MAX_VALUE; i++) {
-            int pos = average + add*i;
+            int pos = average + add * i;
             int temp = helperMethod(fuelArray, pos);
             if (temp < avgConsumption) {
                 average = pos;

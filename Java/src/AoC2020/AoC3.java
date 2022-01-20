@@ -13,14 +13,14 @@ public class AoC3 {
             e.printStackTrace();
         }
 
-        System.out.println(treeFinder(al,3,1));
+        System.out.println(treeFinder(al, 3, 1));
 
-        int[] tempout2 = {  treeFinder(al, 1, 1),
-                            treeFinder(al, 3, 1),
-                            treeFinder(al, 5, 1),
-                            treeFinder(al, 7, 1),
-                            treeFinder(al, 1, 2)
-                        };
+        int[] tempout2 = {treeFinder(al, 1, 1),
+                treeFinder(al, 3, 1),
+                treeFinder(al, 5, 1),
+                treeFinder(al, 7, 1),
+                treeFinder(al, 1, 2)
+        };
         System.out.println(Arrays.toString(tempout2));
         long a = 1;
         for (int i : tempout2) {
