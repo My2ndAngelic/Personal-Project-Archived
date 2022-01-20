@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace CSharp.MathUtils
+namespace CSharp_DNC.MathUtils
 {
     public class TemperatureConvertLibrary
     {

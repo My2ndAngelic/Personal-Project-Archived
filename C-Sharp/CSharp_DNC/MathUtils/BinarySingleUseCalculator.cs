@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp.MathUtils
+namespace CSharp_DNC.MathUtils
 {
     public class BinarySingleUseCalculator
     {

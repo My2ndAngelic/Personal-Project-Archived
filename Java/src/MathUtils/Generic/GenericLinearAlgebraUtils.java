@@ -1,10 +1,12 @@
 package MathUtils.Generic;
 
-public class GenericLinearAlgebraUtils {
+
+public class GenericLinearAlgebraUtils { // Unfinished code, bug expected
+
     /**
      * Check if your input is a 2D-filled matrix.
-     * @param input
-     * @param <T>
+     * @param input A
+     * @param <T> Type
      * @return
      */
     public static <T extends Number> Boolean isMatrix(T[][] input) {
