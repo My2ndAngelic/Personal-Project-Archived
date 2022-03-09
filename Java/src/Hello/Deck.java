@@ -4,6 +4,7 @@ public class Deck {
 
     private final Card[] deck;
     private int count;
+
     Deck(boolean shuffle) {
         this.deck = new Card[52];
         int count = 0;

@@ -31,7 +31,7 @@ public class AoC8 {
         int count = 0;
         ArrayList<LeDisplay> ld = getDisplayOut(dataIn);
         for (int i = 0; i < ld.size() - 4; i++) {
-            count += 1000 * ld.get(i).getNumber() + 100 * ld.get(i + 1).getNumber() + 10 * ld.get(i + 2).getNumber() + 1 * ld.get(i + 3).getNumber();
+            count += 1000 * ld.get(i).getNumber() + 100 * ld.get(i + 1).getNumber() + 10 * ld.get(i + 2).getNumber() + ld.get(i + 3).getNumber();
         }
         return count;
     }
@@ -68,6 +68,7 @@ class LeDisplay {
     private String input;
     private String[] code;
     private String[] newMap;
+
     LeDisplay(String in) {
         if (in.chars().allMatch(Character::isAlphabetic)) {
             this.input = in.replaceAll("\\s+", "");

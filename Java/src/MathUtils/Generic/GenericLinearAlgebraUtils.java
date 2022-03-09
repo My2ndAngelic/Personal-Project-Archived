@@ -5,8 +5,9 @@ public class GenericLinearAlgebraUtils { // Unfinished code, bug expected
 
     /**
      * Check if your input is a 2D-filled matrix.
+     *
      * @param input A
-     * @param <T> A
+     * @param <T>   A
      * @return A
      */
     public static <T extends Number> Boolean isMatrix(T[][] input) {
