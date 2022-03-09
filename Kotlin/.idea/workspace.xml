@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e6d83f7-10c8-49a6-87be-7909391b1a68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ClassExample.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DataClassExample.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/AoC1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/AoC1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/AoC2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/AoC2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/AoC3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/AoC3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/AoC4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/AoC4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/AoC5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/AoC5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/AoC6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/AoC6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/AoC9.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/AoC9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/CommonUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/CommonUsage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/input/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/input/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/input/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/input/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/input/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/input/input3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/input/input4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/input/input4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/input/input5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/input/input5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/input/input6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/input/input6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/input/input9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/input/input9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2020/input/test6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2020/input/test6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC2Alt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC2Alt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC2AltTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC2AltTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoC8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoC8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoCInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoCInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoCMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoCMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/AoCUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/AoCUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/input/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/input/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/input/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/input/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/input/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/input/input3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/input/input4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/input/input4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/input/input5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/input/input5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/input/input6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/input/input6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/input/input7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/input/input7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/AoC2021/input/input8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/AoC2021/input/input8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/ExceptionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/ExceptionExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/DeckMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/DeckMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/Hello1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/Hello1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/Hello2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/Hello2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/HelloMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/HelloMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/HelloW.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/HelloW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/Hw3_statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/Hw3_statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Hello/StringSwitchCaseExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/Hello/StringSwitchCaseExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/MathUtils/BasicMathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/MathUtils/BasicMathUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/MathUtils/Generic/GenericBasicMathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/MathUtils/Generic/GenericBasicMathUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/MathUtils/Generic/GenericLinearAlgebraUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/MathUtils/Generic/GenericLinearAlgebraUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/MathUtils/Generic/IGenericBasicMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/MathUtils/Generic/IGenericBasicMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/MathUtils/Generic/IGenericLinearAlgebra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/MathUtils/Generic/IGenericLinearAlgebra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/MathUtils/LinearAlgebraUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/MathUtils/LinearAlgebraUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/MathUtils/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/MathUtils/MathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/MathUtils/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/me/my2ndangelic/MathUtils/Temperature.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26AIUXaaE3VzBEXDlQ3pwVXIIHq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+  </component>
+  <component name="RunManager" selected="Kotlin.DataClassExampleKt">
+    <configuration name="ClassExampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassExampleKt" />
+      <module name="Kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataClassExampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataClassExampleKt" />
+      <module name="Kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="me.my2ndangelic" type="JetRunConfigurationType" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Kotlin" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Kotlin.me.my2ndangelic" />
+      <item itemvalue="Kotlin.ClassExampleKt" />
+      <item itemvalue="Kotlin.DataClassExampleKt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.DataClassExampleKt" />
+        <item itemvalue="Kotlin.ClassExampleKt" />
+        <item itemvalue="Kotlin.me.my2ndangelic" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e6d83f7-10c8-49a6-87be-7909391b1a68" name="Changes" comment="" />
+      <created>1646859989611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646859989611</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+</project>
